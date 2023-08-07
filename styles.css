@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark-blue: hsl(233, 26%, 24%);
+    --lime-green: hsl(136, 65%, 51%);
+    --bright-cyan: hsl(192, 70%, 51%);
+    --grayish-blue: hsl(233, 8%, 62%);
+    --light-grayish-blue: hsl(220, 16%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --font-size: 18px;
+    --green-cyan-gradient: (image);
+    --background: linear-gradient(to right, #31d35c, #2bb7da);
+    --background-gradient: linear-gradient(to right, #31d35c9c, #2bb7da9c);
+    --font-family: 'Public Sans', sans-serif;
+}
+
+body{
+    /* background-color: red; */
+    height: 290vh;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    font-size: var(--font-size);
+    /* background-color: blue; */
+    /* margin: 3rem; */
+    padding: 1rem;
+    overflow: hidden;
+}
+
+section nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    color: var(--grayish-blue);
+    font-family: var(--font-family);
+}
+
+section nav ul li:hover{
+    cursor: pointer;
+    color: var(--dark-blue);
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 1rem;
+    width: 180px;
+    border-radius: 2rem;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--white);
+    background: var(--background);
+    font-family: var(--font-family);
+}
+
+button:hover{
+    cursor: pointer;
+    background: var(--background-gradient);
+}
+
+/* .icon__logo{
+    m
+} */
+
+.container{
+    background: var(--very-light-gray);
+}
+
+.container .img1{
+    margin-top: -18rem;
+    margin-left: 70rem;
+    width: 1500px;
+    height: 1080px;
+}
+
+.container .img2{
+    margin-top: -60rem;
+    margin-left: 84.3rem;
+    /* width: 40rem; */
+    /* height: 100%; */
+}
+
+.section1{
+    /* background: red; */
+    width: 75vw;
+    height: 50vh;
+    margin-top: -700px;
+    margin-left: -200px;
+}
+
+section .body__text{
+    margin: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: start;
+    font-family: var(--font-family);
+}
+
+.body__text h1{
+    font-size: 3.4rem;
+    font-weight: lighter;
+    color: var(--dark-blue);
+}
+
+.body__text p{
+    font-size: var(--font-size);
+    color: var(--grayish-blue);
+}
+
+.section2{
+    background: var(--light-grayish-blue);
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+    align-items: start;
+    margin-top: 12rem;
+    margin-left: 0.1rem;
+    gap: 2rem;
+    font-family: var(--font-family);
+    width: 1347px;
+    height: 100vh;
+}
+
+.reasons{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 700px;
+    margin-left: 5rem;
+}
+
+.section2 h3{
+    color: var(--dark-blue);
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+.section2 p{
+    color: var(--grayish-blue);
+    font-size: var(--font-size);
+}
+
+.reasons__why{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5rem;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.icon__why{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.icon__why h4{
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.icon__why img{
+    height: 70px;
+    width: 70px;
+}
+
+.section3{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background: var(--very-light-gray);
+    height: 100vh;
+    margin-top: -5rem;
+    margin-left: 0.1rem;
+    width: 1347px;
+    font-family: var(--font-family);
+}
+
+.h3{
+    margin-left: 5rem;  
+    color: var(--dark-blue);
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+.articles{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5rem;
+    width: fit-content;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.articles img{
+    height: 220px;
+}
+
+.articles h6{
+    color: var(--grayish-blue);
+    font-weight: lighter;
+}
+
+.articles h4{
+    color: var(--dark-blue);
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+
+.articles h4:hover{
+    cursor: pointer;
+    color: var(--bright-cyan);
+}
+
+.articles h5{
+    color: var(--grayish-blue);
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.article__content{
+    background: var(--white);
+    overflow: hidden;
+    width: fit-content;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    width: 270px;
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    /* width: fit-content; */
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--dark-blue);
+    height: 25vh;
+    font-family: var(--font-family);
+    font-size: 15px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.logo{
+    background-color: var(--white);
+    border-radius: 100px;
+    padding: 0.3rem;
+}
+
+footer .socials{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 1rem;
+}
+
+footer .twitter:hover{
+    cursor: pointer;
+    background: var(--bright-cyan);
+}
+footer .facebook:hover{
+    cursor: pointer;
+    background: #3B5998;
+}
+footer .pinterest:hover{
+    cursor: pointer;
+    background: rgb(255, 0, 0);
+    border-radius: 100%;
+}
+footer .instagram:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5 );
+    border-radius: 7px;
+}
+footer .youtube:hover{
+    cursor: pointer;
+    background: rgb(255, 0, 0);
+    border-radius: 100%;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    color: var(--white);
+    gap: 6rem;
+    margin-right: 200px;
+}
+
+.nav1 nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.nav2 nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+    color: var(--bright-cyan);
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1.5rem;
+}
+
+footer h4{
+    color: var(--grayish-blue);
+    font-weight: lighter;
+}
